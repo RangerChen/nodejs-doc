@@ -54,3 +54,17 @@ const obj4 = Object.create(obj1);
 // assert.deepEqual(obj1,obj4,'object not equal!');
 // 当断言的两个对象不相等时，则抛出一个带有message信息的异常，当message为undefined时，则输出默认的异常信息，否则将输出message的输入参数
 // 例如 该断言会抛出 AssertionError: object not equal! 异常
+
+
+/**
+ * assert.deepStrictEqual(actual, expected [,message]);
+ * 大多数情况下 严格深度相等都和深度相等时一样的，但这里有两个例外：
+ * 1、ES提供的原始对象将使用全等符（===）进行比较；
+ * 2、对象比较，包含了其原型的比较；
+ * */
+
+// assert.deepEqual({a: 1}, {a: '1'});
+// 通过  应为  1 == '1' 为 true
+
+// assert.deepStrictEqual({a: 1}, {a: '1'});
+// 抛出 AssertionError: { a: 1 } deepStrictEqual { a: '1' } 异常 因为 1 === '1' 为false
