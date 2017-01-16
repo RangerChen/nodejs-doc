@@ -68,3 +68,8 @@ const obj4 = Object.create(obj1);
 
 // assert.deepStrictEqual({a: 1}, {a: '1'});
 // 抛出 AssertionError: { a: 1 } deepStrictEqual { a: '1' } 异常 因为 1 === '1' 为false
+
+/**
+ * 缺少对象的严格相等实例
+ * */
+// TODO
