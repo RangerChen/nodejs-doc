@@ -1,5 +1,5 @@
 /**
- * 断言函数
+ * 断言模块
  */
 const assert = require('assert');
 
