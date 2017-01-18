@@ -46,4 +46,20 @@ const obj4 = Object.create(obj1);
 // 通过 因为obj4的字面量为 {} 所以通过
 
 // assert.notDeepEqual(obj1,obj3,'not Deep Equal!');
-// 抛出 AssertionError: not Deep Equal! 指定信息异常
+// 抛出 AssertionError: not Deep Equal! 指定信息异常, message 参数是可选的 如果message为undefined 则输出默认异常信息
+
+/**
+ * assert.notDeepStrictEqual(actual,expected[,message])
+ * 测试 actual 和 expected 参数是否不深度严格相等
+ * 与 assert.deepStrictEqual()相反
+ * */
+
+// assert.notDeepEqual({a: 1},{a: '1'});
+// 抛出 AssertionError: { a: 1 } notDeepEqual { a: '1' } 异常
+// 因为 1 和 '1' 不是严格相等的
+
+// assert.notDeepStrictEqual({a: 1},{a: '1'});
+// 通过
+
+// assert.notDeepStrictEqual({a: 1},{a: '2'});
+// 通过
