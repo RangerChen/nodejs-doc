@@ -18,3 +18,16 @@ const assert = require('assert');
 
 // assert.notEqual(1,'1');
 // 抛出 AssertionError: 1 != '1' 异常
+
+/**
+ * assert.notStrictEqual(actual,expected[,message])
+ * */
+
+// assert.notStrictEqual(1,2);
+// 通过
+
+// assert.notStrictEqual(1,1);
+// 抛出 AssertionError: 1 !== 1 异常
+
+// assert.notStrictEqual(1,'1');
+// 通过
