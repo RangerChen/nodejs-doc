@@ -27,3 +27,18 @@ const assert = require('assert');
  * 所以该API最好是只用于ES原始类型的断言
  * 对象类型的断言请使用deepEqual或者deepStrictEqual
  * */
+
+
+/**
+ * assert.strictEqual(actual,expected[,message])
+ * 使用严格相等符（===）测试actual和expected是否严格相等
+ * */
+
+// assert.strictEqual(1,2);
+// 抛出 AssertionError: 1 === 2 异常
+
+// assert.strictEqual(1,1);
+// 通过
+
+// assert.strictEqual(1,'1');
+// 抛出 AssertionError: 1 === '1' 异常
