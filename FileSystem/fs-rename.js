@@ -22,4 +22,4 @@ fs.rename('./newFile/','./oldFile',function (error) {
  * 需要注意的是 同步版本没有函调函数（毕竟是同步方法么）
  * 如果产生错误，则会直接抛出异常，正常执行时，则不抛出任何异常
  * */
-fs.renameSync('ori-file','ori-file');
+fs.renameSync('ori-file.fl','ori-file.fl');
