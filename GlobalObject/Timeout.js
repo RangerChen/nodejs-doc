@@ -4,6 +4,7 @@
 
 /**
  * setImmediate setTimeout setInterval 这三个方法都会返回一个预定的定时器对象 Timeout
+ * 该对象可以用于取消当前正在进行的函数的开关
  * */
 var Timeout = {
     _called: false,
