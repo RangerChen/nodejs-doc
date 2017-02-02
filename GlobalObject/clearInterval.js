@@ -6,7 +6,7 @@
  *
  * cleatInterval(Timeout)
  * 数据类型：函数 Function
- * Timeout有setTimeout函数返回
+ * Timeout有setInterval函数返回
  * */
 
 console.log(clearTimeout.toString());
