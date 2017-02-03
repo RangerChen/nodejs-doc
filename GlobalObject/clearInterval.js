@@ -9,18 +9,14 @@
  * Timeout有setInterval函数返回
  * */
 
-console.log(clearTimeout.toString());
+console.log(clearInterval.toString());
 
 /**
  * 对应源码
  * */
 var newClearInterval = function (timer) {
-    if(timer && (timer[kOnTimeout] || timer._onTimeout)){
-        timer[kOnTimeout] = timer._onTimeout = null;
-        if (timer instanceof Timeout){
-            timer.close(); // for after === 0
-        } else {
-            unenroll(timer);
-        }
+    if (timer && timer._repeat){
+        timer._repeat = null;
+        clearTimeout(timer);
     }
 };
