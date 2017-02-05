@@ -4,6 +4,7 @@
 
 /**
  * 一个当前模块的引用
+ * 模块可以通过 require() 来进行引入
  * */
 console.log(module);
 
