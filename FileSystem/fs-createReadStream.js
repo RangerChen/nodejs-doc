@@ -5,7 +5,7 @@
 const fs = require('fs');
 
 /**
- * createReadStream 方法旺旺用于打开大型的文本文件
+ * createReadStream 方法往往用于打开大型的文本文件
  * 创建一个读取操作的数据流
  * */
 
